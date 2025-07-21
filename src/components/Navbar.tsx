@@ -2,10 +2,12 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,18 +48,25 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item, index) => (
-              <motion.a
+              <motion.div
                 key={item.name}
-                href={item.href}
-                className="text-white/80 hover:text-white transition-all duration-300 relative group"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 whileHover={{ y: -2 }}
               >
-                {item.name}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-blue-500 transition-all duration-300 group-hover:w-full"></span>
-              </motion.a>
+                <Link
+                  to={item.href}
+                  className={`text-white/80 hover:text-white transition-all duration-300 relative group ${
+                    location.pathname === item.href ? 'text-white' : ''
+                  }`}
+                >
+                  {item.name}
+                  <span className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-purple-500 to-blue-500 transition-all duration-300 ${
+                    location.pathname === item.href ? 'w-full' : 'w-0 group-hover:w-full'
+                  }`}></span>
+                </Link>
+              </motion.div>
             ))}
           </div>
 
@@ -95,17 +104,22 @@ const Navbar = () => {
         >
           <div className="glass-card rounded-2xl p-6 space-y-4">
             {navItems.map((item, index) => (
-              <motion.a
+              <motion.div
                 key={item.name}
-                href={item.href}
-                className="block text-white/80 hover:text-white transition-colors py-2"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.3, delay: index * 0.1 }}
-                onClick={() => setIsMobileMenuOpen(false)}
               >
-                {item.name}
-              </motion.a>
+                <Link
+                  to={item.href}
+                  className={`block text-white/80 hover:text-white transition-colors py-2 ${
+                    location.pathname === item.href ? 'text-white font-semibold' : ''
+                  }`}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              </motion.div>
             ))}
             <Button variant="premium" className="w-full mt-4">
               Get Started
