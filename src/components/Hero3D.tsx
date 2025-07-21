@@ -1,6 +1,6 @@
 import { useRef, useMemo } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Sphere, MeshDistortMaterial, Float } from '@react-three/drei';
+import { Float } from '@react-three/drei';
 import * as THREE from 'three';
 
 const AnimatedSphere = ({ position, color, speed = 1 }: { 
@@ -23,16 +23,17 @@ const AnimatedSphere = ({ position, color, speed = 1 }: {
       rotationIntensity={1}
       floatIntensity={2}
     >
-      <Sphere ref={meshRef} args={[1, 64, 64]} position={position}>
-        <MeshDistortMaterial
+      <mesh ref={meshRef} position={position}>
+        <sphereGeometry args={[1, 64, 64]} />
+        <meshPhysicalMaterial
           color={color}
-          attach="material"
-          distort={0.4}
-          speed={2}
           roughness={0.1}
           metalness={0.8}
+          transmission={0.1}
+          transparent
+          opacity={0.8}
         />
-      </Sphere>
+      </mesh>
     </Float>
   );
 };
