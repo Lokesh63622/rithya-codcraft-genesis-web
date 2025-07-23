@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion';
-import { Code, Users, Award, Zap, Globe, Smartphone } from 'lucide-react';
+import { Code, Users, Award, Zap, Globe, Smartphone, ArrowLeft } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { Button } from '@/components/ui/button';
 
 const About = () => {
+   const navigate = useNavigate();
   const stats = [
     { number: "50+", label: "Projects Completed", icon: Code },
     { number: "30+", label: "Happy Clients", icon: Users },
@@ -33,6 +36,12 @@ const About = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
+       <div className=" mt-7 text-left max-w-7xl mx-auto">
+        <Button variant="outline" onClick={() => navigate(-1)} className="flex items-center gap-2">
+          <ArrowLeft className="w-4 h-4" />
+          Back
+        </Button>
+      </div>
       <section className="pt-24 pb-16 px-4">
         <div className="max-w-7xl mx-auto">
           <motion.div

@@ -1,9 +1,11 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { ExternalLink, Github, Calendar, Tag } from 'lucide-react';
+import { ExternalLink, Github, Calendar, Tag, ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useNavigate } from 'react-router-dom';
 
 const Portfolio = () => {
+    const navigate = useNavigate();
   const [filter, setFilter] = useState('all');
 
   const projects = [
@@ -96,6 +98,12 @@ const Portfolio = () => {
 
   return (
     <div className="min-h-screen bg-background">
+        <div className=" mt-7 text-left max-w-7xl mx-auto">
+  <Button variant="outline" onClick={() => navigate(-1)} className="flex items-center gap-2">
+    <ArrowLeft className="w-4 h-4" />
+    Back
+  </Button>
+</div>
       {/* Hero Section */}
       <section className="pt-24 pb-16 px-4">
         <div className="max-w-7xl mx-auto text-center">

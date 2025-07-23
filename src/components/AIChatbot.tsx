@@ -13,7 +13,7 @@ const AIChatbot = () => {
   const [messages, setMessages] = useState([
     { 
       id: 1, 
-      text: "Hi! I'm Ritha, your AI assistant for Rithanya CodeCraft. I can help you start your project, answer questions about our services, or connect you with our team. What would you like to know?", 
+      text: "Hi! I'm Rithu, your AI assistant for Rithanya CodeCraft. I can help you start your project, answer questions about our services, or connect you with our team. What would you like to know?", 
       isBot: true 
     }
   ]);
@@ -192,7 +192,7 @@ const AIChatbot = () => {
           opacity: 1, 
           y: 0, 
           scale: 1,
-          height: isMinimized ? 60 : 400 
+          height: isMinimized ? 60 : 432 
         }}
         exit={{ opacity: 0, y: 100, scale: 0.9 }}
         className="fixed bottom-6 right-6 z-50 w-80 bg-card border border-border rounded-2xl shadow-2xl overflow-hidden max-h-[90vh]"

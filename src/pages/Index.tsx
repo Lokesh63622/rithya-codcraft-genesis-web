@@ -16,8 +16,10 @@ const Index = () => {
         <ContactSection />
       </main>
       <Footer />
-      <WhatsAppButton />
-      <AIChatbot />
+ <div className="flex flex-col gap-4">
+  <WhatsAppButton />
+  <AIChatbot />
+</div>
     </div>
   );
 };
