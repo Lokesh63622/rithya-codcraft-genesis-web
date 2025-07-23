@@ -108,6 +108,11 @@ const HeroSection = () => {
               variant="hero" 
               size="xl"
               className="group"
+              onClick={() => {
+                // Trigger chatbot to open and show project form
+                const event = new CustomEvent('openProjectForm');
+                window.dispatchEvent(event);
+              }}
             >
               Start Your Project
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
