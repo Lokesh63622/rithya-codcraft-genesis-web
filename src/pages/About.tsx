@@ -11,22 +11,22 @@ const About = () => {
 
   const team = [
     {
-      name: "Rithya Ramanathan",
+      name: "Rithanya's Father",
       role: "Founder & Lead Developer",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face",
-      skills: ["React", "Node.js", "UI/UX Design"]
+      skills: ["MERN Stack", "Python", "AI Integration"]
     },
     {
       name: "Sarah Chen",
-      role: "Full Stack Developer",
+      role: "AI Specialist",
       image: "https://images.unsplash.com/photo-1494790108755-2616b612b865?w=300&h=300&fit=crop&crop=face",
-      skills: ["Vue.js", "Python", "Mobile Development"]
+      skills: ["Machine Learning", "OpenAI", "Python"]
     },
     {
       name: "Alex Rodriguez",
-      role: "UI/UX Designer",
+      role: "Full Stack Developer",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face",
-      skills: ["Figma", "Adobe Suite", "3D Design"]
+      skills: ["React", "Node.js", "MongoDB"]
     }
   ];
 
@@ -41,12 +41,11 @@ const About = () => {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
-              About RithyaCodCraft
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 gradient-text">
+              About Rithanya CodeCraft
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              We're a passionate team of developers and designers creating exceptional digital experiences 
-              that transform businesses and delight users.
+              Named after our founder's beloved daughter Rithanya, representing hope, innovation, and the future of technology.
             </p>
           </motion.div>
 
@@ -78,11 +77,11 @@ const About = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Mission</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 gradient-text">The Rithanya Legacy</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                At RithyaCodCraft, we believe in the power of code to transform ideas into reality. 
-                Our mission is to create digital solutions that not only meet our clients' needs but 
-                exceed their expectations.
+                At Rithanya CodeCraft, every line of code carries the spirit of innovation that our founder's 
+                daughter Rithanya represents. We believe in building the digital future with the same care, 
+                curiosity, and boundless potential that children possess.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center">

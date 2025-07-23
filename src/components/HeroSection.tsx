@@ -56,9 +56,11 @@ const HeroSection = () => {
             animate="visible"
             className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight"
           >
-            <span className="gradient-text">Crafting Digital</span>
+            <span className="gradient-text">Rithanya CodeCraft</span>
             <br />
-            <span className="text-white">Experiences</span>
+            <span className="text-white text-2xl md:text-4xl lg:text-5xl font-light mt-4 block">
+              We Build Your Digital Future
+            </span>
           </motion.h1>
 
           {/* Subheading */}
@@ -69,7 +71,7 @@ const HeroSection = () => {
             animate="visible"
             className="text-xl md:text-2xl text-white/80 mb-8 max-w-3xl mx-auto leading-relaxed"
           >
-            We transform ideas into stunning digital realities with cutting-edge web and mobile development solutions
+            Transforming ideas into powerful digital solutions with MERN Stack, Python automation, and cutting-edge AI technology
           </motion.p>
 
           {/* Stats */}

@@ -2,41 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Premium design system for RithyaCodCraft - Modern tech agency aesthetic */
+/* Premium design system for Rithanya CodeCraft - Electric blue tech aesthetic */
 
 @layer base {
   :root {
-    /* Dark premium background */
-    --background: 222 84% 4.9%;
+    /* Deep tech background */
+    --background: 210 100% 6%;
     --foreground: 210 40% 98%;
 
     /* Glass morphism cards */
-    --card: 222 84% 4.9%;
+    --card: 210 100% 8%;
     --card-foreground: 210 40% 98%;
-    --card-glass: 222 84% 8%;
-    --card-border: 263 70% 50% / 0.1;
+    --card-glass: 210 100% 12%;
+    --card-border: 195 100% 50% / 0.15;
 
-    --popover: 222 84% 6%;
+    --popover: 210 100% 8%;
     --popover-foreground: 210 40% 98%;
 
-    /* Primary purple-blue brand */
-    --primary: 263 70% 50%;
+    /* Electric blue primary brand */
+    --primary: 195 100% 50%;
     --primary-foreground: 210 40% 98%;
-    --primary-glow: 263 70% 60%;
-    --primary-light: 263 70% 70%;
+    --primary-glow: 195 100% 60%;
+    --primary-light: 195 100% 70%;
+    --primary-dark: 195 100% 35%;
 
     /* Secondary accents */
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 220 30% 18%;
     --secondary-foreground: 210 40% 98%;
 
     /* Muted grays */
-    --muted: 217.2 32.6% 17.5%;
+    --muted: 220 30% 18%;
     --muted-foreground: 215 20.2% 65.1%;
 
     /* Accent colors */
-    --accent: 263 70% 50%;
+    --accent: 195 100% 50%;
     --accent-foreground: 210 40% 98%;
-    --accent-secondary: 195 100% 50%;
+    --accent-secondary: 280 100% 70%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
@@ -47,10 +48,11 @@
 
     --radius: 1rem;
 
-    /* Gradients */
+    /* Electric gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
     --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent-secondary)) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(var(--card-glass)) 0%, hsl(var(--card-glass) / 0.5) 100%);
+    --gradient-electric: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-light)) 50%, hsl(var(--accent-secondary)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--card-glass)) 0%, hsl(var(--card-glass) / 0.8) 100%);
     --gradient-text: linear-gradient(135deg, hsl(var(--primary-light)), hsl(var(--accent-secondary)));
     
     /* Shadows & Effects */

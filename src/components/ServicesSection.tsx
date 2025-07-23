@@ -1,43 +1,31 @@
 import { motion } from 'framer-motion';
-import { Code, Smartphone, RefreshCw, Database, Palette, Zap } from 'lucide-react';
+import { Code, Bot, Brain, Palette } from 'lucide-react';
 
 const ServicesSection = () => {
   const services = [
     {
       icon: Code,
-      title: "Web Development",
-      description: "Modern, responsive websites built with cutting-edge technologies like React, Next.js, and Vue.js",
-      features: ["Responsive Design", "SEO Optimized", "Fast Loading", "Modern UI/UX"]
+      title: "MERN Stack Development",
+      description: "Full-stack web applications using MongoDB, Express.js, React, and Node.js for scalable solutions.",
+      features: ["React Frontend", "Node.js Backend", "MongoDB Database", "Express.js API"]
     },
     {
-      icon: Smartphone,
-      title: "Mobile App Development",
-      description: "Native and cross-platform mobile applications that deliver exceptional user experiences",
-      features: ["iOS & Android", "React Native", "Flutter", "Native Performance"]
+      icon: Bot,
+      title: "Python Automation & APIs",
+      description: "Powerful Python applications for automation, data processing, and robust API development.",
+      features: ["Django/FastAPI", "Data Analytics", "Process Automation", "Machine Learning"]
     },
     {
-      icon: RefreshCw,
-      title: "Website Revamping",
-      description: "Transform your existing website with modern design and improved functionality",
-      features: ["UI/UX Redesign", "Performance Boost", "Mobile Optimization", "Security Updates"]
-    },
-    {
-      icon: Database,
-      title: "Full-Stack Solutions",
-      description: "Complete end-to-end development with robust backend systems and APIs",
-      features: ["API Development", "Database Design", "Cloud Integration", "Scalable Architecture"]
+      icon: Brain,
+      title: "Generative AI Web Apps",
+      description: "Cutting-edge AI-powered applications leveraging the latest in generative artificial intelligence.",
+      features: ["OpenAI Integration", "Custom AI Models", "Chatbots & Assistants", "AI-Powered Analytics"]
     },
     {
       icon: Palette,
-      title: "UI/UX Design",
-      description: "Beautiful, intuitive designs that engage users and drive conversions",
-      features: ["User Research", "Wireframing", "Prototyping", "Design Systems"]
-    },
-    {
-      icon: Zap,
-      title: "Performance Optimization",
-      description: "Speed up your applications with advanced optimization techniques",
-      features: ["Core Web Vitals", "Code Splitting", "Image Optimization", "Caching Strategies"]
+      title: "Custom Website Design",
+      description: "Beautiful, responsive websites designed to captivate your audience and drive conversions.",
+      features: ["UI/UX Design", "Responsive Layout", "Brand Identity", "Performance Optimization"]
     }
   ];
 
