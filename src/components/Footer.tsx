@@ -12,8 +12,8 @@ const Footer = () => {
 
   const contactInfo = [
     { icon: Mail, text: "hello@rithanyacodecraft.com", href: "mailto:hello@rithanyacodecraft.com" },
-    { icon: Phone, text: "+1 (555) 123-4567", href: "tel:+15551234567" },
-    { icon: MapPin, text: "San Francisco, CA", href: "#" }
+    { icon: Phone, text: "+91 8497895065", href: "tel:+918497895065" },
+    { icon: MapPin, text: "Bangalore", href: "#" }
   ];
 
   return (

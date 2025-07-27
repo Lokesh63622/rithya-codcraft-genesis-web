@@ -8,11 +8,11 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: true,
     port: 8080,
+    allowedHosts: ['rithanyacodecraft.com'],
   },
   plugins: [
     react(),
-    mode === 'development' &&
-    componentTagger(),
+    mode === 'development' && componentTagger(),
   ].filter(Boolean),
   resolve: {
     alias: {
