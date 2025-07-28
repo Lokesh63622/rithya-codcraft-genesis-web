@@ -36,14 +36,20 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <motion.div
-            className="text-2xl font-bold gradient-text"
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.2 }}
-          >
-            Rithanya CodeCraft
-          </motion.div>
+
+          
+ <motion.div
+    className="flex items-center space-x-2 text-2xl font-bold"
+    whileHover={{ scale: 1.05 }}
+    transition={{ duration: 0.3, ease: "easeInOut" }}
+  >
+
+    {/* Text with animated gradient */}
+    <h1 className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 text-transparent bg-clip-text">
+      Rithanya CodeCraft
+    </h1>
+  </motion.div>
+
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">

@@ -24,7 +24,10 @@ const HeroSection = () => {
   ];
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    // <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  <section id="home" className="relative min-h-screen pt-20 sm:pt-0 flex items-center justify-center overflow-hidden">
+
+
       {/* 3D Background */}
       <Hero3D />
       
